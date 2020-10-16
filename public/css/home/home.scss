@@ -1,74 +1,161 @@
 @import "var";
 @import "mixin";
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    @include body
+::selection {
+  color: $secondary-color;
+}
+body {
+  @include body;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-footer{
-    @include footer
+/* Navigation Bar Starts */
+.main_header {
+  width: 100vw;
+  background-color: $tertiary-color;
 }
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.main_header{
-width:100vw;
-background-color:$tertiary-color;
-border-radius: 10rem;
-}
-.nav-item{
-   & a{
-       font-size:1.6rem;
-       color:$primary-color;
-       &:hover{
-           color:$secondary-color;
-       }
-   }
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    & > a{
-        font-size:1.6rem;
+.nav-item {
+  & a {
+    font-size: 1.6rem;
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
     }
-    & .navbar-collapse{
-        & .navbar-nav{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    
+  }
 }
-.logo{
-    & > img{
-        width:15%;
-        border-radius: 50%;
-        margin:0.5rem 2rem;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  & > a {
+    font-size: 1.6rem;
+  }
+  & .navbar-collapse {
+    & .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    & > i{
-        animation:rotation 1s infinite linear;
-        font-size:1.7rem;
-        color:$secondary-color;
-    }
+  }
+}
+.logo {
+  & > img {
+    width: 15%;
+    border-radius: 50%;
+    margin: 0.5rem 2rem;
+  }
+  & > i {
+    animation: rotation 1s infinite linear;
+    font-size: 1.7rem;
+    color: $secondary-color;
+  }
 }
 
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar-toggler {
+  background-color: $primary-color;
+}
+.navbar-toggler-icon {
+  color: $secondary-color;
+}
+.nav_buttons {
+  & .nav_button {
+    @include button;
+    margin: 0.2rem 1rem;
+    transition: 0.5s ease;
+    &:hover {
+      box-shadow: 0px 0px 0.2rem 0.2rem $primary-color;
     }
-    to{
-        transform: rotate(360deg);
+  }
+}
+.navbar-nav {
+  margin-right: 2rem;
+  & .nav-item {
+    margin: 0 1rem;
+  }
+}
+/* Navigation Bar ends */
+
+// Header starts
+.header_left {
+  padding:0.5rem 1.5rem;
+}
+.header_right {
+  & > img {
+    width: 100%;
+  }
+}
+.main_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  background-color: rgb(20, 20, 97);
+  & .header_left {
+    text-align: center;
+    & p {
+      font-size: 4.5rem;
+      color: $primary-color;
+      & .typed-text{
+        font-weight: normal;
+        color: #dd7732;
+      }
+      & .cursor{
+        display: inline-block;
+        background-color: #ccc;
+        margin-left: 0.1rem;
+        width: 0.3rem;
+        animation: blink 1s infinite;
+      }
     }
+    & button {
+      transition: 0.5s ease;
+      @include button;
+      &:hover{
+        box-shadow: 0px 0px 0.2rem 0.2rem $primary-color;
+      }
+    }
+  }
+  & .header_right {
+    animation: up-down 1s infinite linear alternate-reverse;
+  }
 }
-.navbar-toggler{
-    background-color: $primary-color;
+@keyframes up-down {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    transform: translateY(-1rem);
+  }
 }
-.navbar-toggler-icon{
-    color: $secondary-color;
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
+.typing{
+  animation: none;
+}
+// Header ends
+/* Footer Section starts */
+footer {
+  @include footer;
+}
+/* Footer Section ends */

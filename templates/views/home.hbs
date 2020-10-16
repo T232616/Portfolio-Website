@@ -8,14 +8,28 @@
     <title>{{title}}</title>
     <link rel="stylesheet" href="css/home/home.css">
     <link rel="shortcut icon" href="images/myPhoto.jpg" type="image/jpg">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
 </head>
 
 
 <body>
     {{>header}}
+    <section class="row main_section container-fluid">
+        <div class="header_left col-12 col-md-6 col-lg-5 mx-auto">
+            <p><span class="typed-text"></span><span  class="cursor"></span></p>
+            <button>Contact Me</button>
+        </div>
+
+        <div class="header_right col-12 col-md-6 col-lg-5 mx-auto">
+            <img src="images/img.svg">
+        </div>
+
+    </section>
     {{>footer}}
     {{>lowerlinks}}
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
