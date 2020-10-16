@@ -1,0 +1,74 @@
+@import "var";
+@import "mixin";
+html{
+    font-size: 62.5%;
+}
+body{
+    @include body
+
+}
+footer{
+    @include footer
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_header{
+width:100vw;
+background-color:$tertiary-color;
+border-radius: 10rem;
+}
+.nav-item{
+   & a{
+       font-size:1.6rem;
+       color:$primary-color;
+       &:hover{
+           color:$secondary-color;
+       }
+   }
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > a{
+        font-size:1.6rem;
+    }
+    & .navbar-collapse{
+        & .navbar-nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+}
+.logo{
+    & > img{
+        width:15%;
+        border-radius: 50%;
+        margin:0.5rem 2rem;
+    }
+    & > i{
+        animation:rotation 1s infinite linear;
+        font-size:1.7rem;
+        color:$secondary-color;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.navbar-toggler{
+    background-color: $primary-color;
+}
+.navbar-toggler-icon{
+    color: $secondary-color;
+}

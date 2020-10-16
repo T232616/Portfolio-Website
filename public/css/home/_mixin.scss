@@ -1,0 +1,15 @@
+@mixin footer {
+    background-color: $footer-color;
+    color:$primary-color;
+    margin-top: auto;
+    text-align: center;
+}
+@mixin body {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+@mixin  button {
+    border:none;
+    outline: none;
+}
