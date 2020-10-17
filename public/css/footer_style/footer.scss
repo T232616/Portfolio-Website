@@ -1,0 +1,7 @@
+/* Footer Section starts */
+@import "var";
+@import "mixin";
+footer {
+    @include footer;
+  }
+  /* Footer Section ends */

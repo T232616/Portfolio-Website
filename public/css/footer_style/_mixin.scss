@@ -1,0 +1,8 @@
+@import "var";
+@mixin footer {
+  background-color: $footer-color;
+  color: $primary-color;
+  margin-top: auto;
+  text-align: center;
+}
+
