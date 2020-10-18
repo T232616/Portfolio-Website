@@ -137,6 +137,24 @@ body {
 }
 
 /* Navigation Bar ends */
+@media (max-width: 991px) {
+  .nav_buttons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 545px) {
+  .navbar-brand {
+    width: 80%;
+  }
+}
+
+@media (max-width: 297px) {
+  .navbar-brand {
+    width: 78%;
+  }
+}
+
 /* Footer Section starts */
 footer {
   background-color: black;
