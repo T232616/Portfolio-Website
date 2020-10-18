@@ -28,22 +28,12 @@ body {
           box-sizing: border-box;
 }
 
-/* Navigation Bar Starts */
 .main_header {
   width: 100vw;
   background-color: #00004e;
 }
 
-.nav-item a {
-  font-size: 1.6rem;
-  color: #fff;
-}
-
-.nav-item a:hover {
-  color: #00a5a5;
-}
-
-.navbar {
+.navbar-dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,11 +46,15 @@ body {
   margin: 0;
 }
 
-.navbar > a {
+.navbar-dark .navbar-toggler-icon {
+  font-size: 2rem;
+}
+
+.navbar-dark > a {
   font-size: 1.6rem;
 }
 
-.navbar .navbar-collapse .navbar-nav {
+.navbar-dark .navbar-collapse .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +64,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navbar-dark .navbar-collapse .navbar-nav > .nav-item > .nav-link {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.navbar-dark .navbar-collapse .navbar-nav > .nav-item > .nav-link:hover {
+  color: #00a5a5;
 }
 
 .logo > img {
@@ -105,14 +108,6 @@ body {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}
-
-.navbar-toggler {
-  background-color: #fff;
-}
-
-.navbar-toggler-icon {
-  color: #00a5a5;
 }
 
 .nav_buttons .nav_button {

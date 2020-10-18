@@ -15,25 +15,19 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-/* Navigation Bar Starts */
+// /* Navigation Bar Starts */
 .main_header {
   width: 100vw;
   background-color: $tertiary-color;
 }
-.nav-item {
-  & a {
-    font-size: 1.6rem;
-    color: $primary-color;
-    &:hover {
-      color: $secondary-color;
-    }
-  }
-}
-.navbar {
+.navbar-dark {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
+  &  .navbar-toggler-icon{
+    font-size:2rem;
+  }
   & > a {
     font-size: 1.6rem;
   }
@@ -42,6 +36,15 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      & > .nav-item{
+        & > .nav-link {
+          font-size: 1.6rem;
+          color: $primary-color;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
     }
   }
 }
@@ -65,12 +68,6 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
-.navbar-toggler {
-  background-color: $primary-color;
-}
-.navbar-toggler-icon {
-  color: $secondary-color;
 }
 .nav_buttons {
   & .nav_button {
