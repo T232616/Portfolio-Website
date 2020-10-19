@@ -3,6 +3,7 @@ const path = require("path");
 const hbs = require("hbs");
 const port = process.env.PORT || 3000;
 app = express();
+app.use(express.urlencoded());
 const staticPath = path.join(__dirname, "../public");
 const viewPath = path.join(__dirname, "../templates/views");
 const partialPath = path.join(__dirname, "../templates/partials");
@@ -19,6 +20,10 @@ app.get("/about", (req, res) => {
 app.get("/contact", (req, res) => {
   res.status(200).render("contact", { title: "Contact Page" });
 });
+app.post("/contact",(req,res)=>{
+console.log(req.body);
+res.send("<h1>Form Submitted successfully</h1>");
+})
 app.get("*", (req, res) => {
   res.status(404).render("404", { title: "Page Not Found" });
 });

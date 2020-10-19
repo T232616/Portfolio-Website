@@ -41,8 +41,8 @@ body {
   z-index: 100;
   width: 320px;
   height: 420px;
- background-color: rgba(19, 19, 255, 0.6);
-  top: 65%;
+  background-color: rgba(0, 0, 78, 0.45);
+  top: 55%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -64,11 +64,12 @@ body {
 
     font-size: 16px;
   }
-  & input[type="submit"] {
+  & button{
     border: none;
     outline: none;
     height: 40px;
     background: #1c8adb;
+    width: 100%;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -95,5 +96,15 @@ h1 {
   text-align: center;
   font-size: 22px;
 }
+// Responsive Code for Form
+
+@media (max-width: 991px)
+{
+  .login-box{
+    top: 50rem;
+  }
+}
+
+// Responsive Code for Form
 
 // Contact Form Ends Here
