@@ -1,0 +1,31 @@
+@import "../header_style/navbar";
+@import "../footer_style/footer";
+.main_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #141461;
+  .container-fluid{
+      display:flex;
+      align-items: center;
+      justify-content:center;
+    & .skill{
+        font-size:20rem;
+        color:orange;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & h1{
+            color:#fff;
+        }
+      }
+  }
+
+  
+}
+@media (max-width:760px)
+{
+    .main_section{
+        height: auto!important;
+    }
+}

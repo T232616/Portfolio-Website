@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/skills/skills.css">
+    <link rel="shortcut icon" href="images/myPhoto.jpg" type="image/jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    {{>upperlinks}}
+</head>
+
+<body>
+    {{>header}}
+    <div class="main_section">
+        <div class="container-fluid my-3">
+            <div class="row">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="skill col-10 col-md-4 col-lg-4 mx-auto my-5  ">
+                    <i class="fab fa-html5"></i>
+                    <h1>HTML5</h1>
+                </div>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="skill col-10 col-md-4 col-lg-4 mx-auto my-5">
+                    <i style="color:blue;" class="fab fa-css3-alt"></i>
+                    <h1>CSS3</h1>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="skill col-10 col-md-4 col-lg-4 mx-auto my-5">
+                    <i style="color:yellow;" class="fab fa-js-square"></i>
+                    <h1>JavaScript</h1>
+                </div>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="skill col-10 col-md-4 col-lg-4 mx-auto my-5">
+                    <i style="color:#6e004d" class="fab fa-bootstrap"></i>
+                    <h1>Bootstrap 5</h1>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="skill col-10 col-md-4 col-lg-4 mx-auto my-5">
+                    <i style="color:green" class="fab fa-node"></i>
+                    <h1>Node Js</h1>
+                </div>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    class="skill col-10 col-md-4 col-lg-4 mx-auto my-5">
+                    <i style="color: rgb(58, 58, 248);" class="fab fa-react"></i>
+                    <h1>Node Js</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    {{>lowerlinks}}
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -31,6 +31,7 @@ body {
 .main_header {
   width: 100vw;
   background-color: #00004e;
+  z-index: 100;
 }
 
 .navbar-dark {
@@ -213,8 +214,28 @@ body {
   color: #fff;
 }
 
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
 .login-box {
-  z-index: 100;
+  z-index: 1;
   width: 320px;
   height: 420px;
   background-color: rgba(0, 0, 78, 0.45);
@@ -259,9 +280,8 @@ body {
 
 .login-box button:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 0.2rem 0.2rem #fff;
-          box-shadow: 0px 0px 0.2rem 0.2rem #fff;
-  color: #000;
+  -webkit-box-shadow: 0px 0px 0.2rem 0.2rem cyan;
+          box-shadow: 0px 0px 0.2rem 0.2rem cyan;
 }
 
 .avatar {
@@ -271,6 +291,7 @@ body {
   position: absolute;
   top: -50px;
   left: calc(50% - 50px);
+  z-index: 2;
 }
 
 h1 {
@@ -280,9 +301,27 @@ h1 {
   font-size: 22px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .login-box {
-    top: 50rem;
+    top: 55rem;
+    height: 420px;
+  }
+}
+
+@media (max-width: 320px) {
+  .login-box {
+    top: 27.5rem;
+    height: 35rem;
+    width: 27rem;
+  }
+  .login-box input {
+    margin-bottom: 0px;
+  }
+  .login-box button {
+    margin-top: 10px;
+  }
+  .login-box .avatar {
+    top: -34px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/about/about.css">
+    <link rel="shortcut icon" href="images/myPhoto.jpg" type="image/jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/typed.min.js"></script>
+
+    {{>upperlinks}}
+</head>
+
+<body>
+    {{>header}}
+
+    <div class="main_section">
+
+        <div class="container-fluid">
+            <div class="row my-5 col-10 col-sm-8 col-lg-4 mx-auto  image">
+                <img data-aos="zoom-in" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
+                    src="images/myPhoto.jpg" alt="Tejas Jhamnani">
+            </div>
+            <div class="row mx-auto col-12 col my-5">
+                <h1 class="title"></h1>
+            </div>
+            <div class="row mx-auto col-12 my-5">
+                <h3 class="intro">I am in Third Year and I am a Web Developer Enthusiast</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+               <a href="/projects"  class="projects text-center col-9 col-sm-4 mx-auto col-lg-3 my-3">My Projects</a> 
+                <a href="/skills" class="skills text-center col-9 col-sm-4 mx-auto col-lg-3 my-3">My Skills</a>
+            </div>
+        </div>
+
+    </div>
+    {{>footer}}
+    {{>lowerlinks}}
+
+    <script>
+        AOS.init();
+        var typed1 = new Typed('.title', {
+            strings: ["I am a Student from Veermata Jijabai Technological Institute"],
+            typeSpeed: 30
+        });
+
+    </script>
+</body>
+
+</html>

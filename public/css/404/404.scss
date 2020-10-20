@@ -1,0 +1,18 @@
+@import "../header_style/navbar.scss";
+@import "../footer_style/footer.scss";
+.main_section{
+   width: 100vw;
+   height: 100vh;
+   background-color: #141461;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   h1{
+       color: #dd7732;
+       font-size:5rem;
+   }
+   img{
+       width:100%;
+       height: 100%;
+   }
+}

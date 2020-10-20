@@ -38,7 +38,7 @@
       transition: 0.5s ease;
       @include button;
       &:hover{
-        box-shadow: 0px 0px 0.2rem 0.2rem $primary-color;
+        box-shadow: 0px 0px 0.2rem 0.2rem #fff;
       }
     }
   }
@@ -64,5 +64,13 @@
 .typing{
   animation: none;
 }
+// Responsive Code for Home
+@media (max-width:320px)
+{
+  html{
+    font-size:36.5%!important ;
+  }
+}
+// Responsive Code for Home
 // Home ends
 
