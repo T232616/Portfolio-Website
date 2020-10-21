@@ -1,16 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/myPhoto.jpg" type="image/jpg">
-    <link rel="stylesheet" href="css/projects/projects.css">
     <title>{{title}}</title>
+    <link rel="stylesheet" href="css/projects/projects.css">
+    <link rel="shortcut icon" href="images/myPhoto.jpg" type="image/jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     {{>upperlinks}}
 </head>
+
 <body>
     {{>header}}
+    <div class="main_section">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card p-0 mx-auto">
+                            <img src="images/chat_app.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title text-center my-4">Chat App</h1>
+                                <p class="card-text text-center my-4">Its a Real Time Chat App which can be used for
+                                    text messaging between persons and it is build using React Js and Firebase</p>
+                                <div class="row my-4">
+                                    <a href="https://messenger-clone-c2910.web.app/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View App</a>
+                                    <a href="https://github.com/T232616/Messenger-Clone/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View Code</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card p-0 mx-auto">
+                            <img src="images/todo.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title text-center my-4">ToDo App</h1>
+                                <p class="card-text text-center my-4">Its a Real Time Todo Application which keeps track
+                                    of all your pending work and it is build using React and Firebase</p>
+                                <div class="row my-4">
+                                    <a href="https://todoapp-cd4ff.web.app/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View App</a>
+                                    <a href="https://github.com/T232616/Todo-List-App/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View Code</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card p-0 mx-auto">
+                            <img src="images/covid.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title text-center my-4">Covid-19 Updates</h1>
+                                <p class="card-text text-center my-4">It is an Application which is used to get all the
+                                    data regarding covid-19 for all the countries developed using React JS and
+                                    Firebase</p>
+                                <div class="row my-4">
+                                    <a href="https://covid19-updates-745a1.web.app/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View App</a>
+                                    <a href="https://github.com/T232616/covid19-updates/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View Code</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card p-0 mx-auto">
+                            <img src="images/coder.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title text-center my-4">Coders Website</h1>
+                                <p class="card-text text-center my-4">Its is a completely front end design which is
+                                    developed to promote and encourage coding build using HTML5,CSS3,JAVASCRIPT and
+                                    Bootstrap</p>
+                                <div class="row my-4">
+                                    <a href="https://codersite.netlify.app/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View App</a>
+                                    <a href="https://github.com/T232616/TrueCoder/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View Code</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card p-0 mx-auto">
+                            <img src="images/educate.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title text-center my-4">iEducate Website</h1>
+                                <p class="card-text text-center my-4"> Its a front end Website which is used to promote
+                                    education in the country and its build using pure HTML5,CSS3 and JAVASCRIPT </p>
+                                <div class="row my-4">
+                                    <a href="https://codersite.netlify.app/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View App</a>
+                                    <a href="https://github.com/T232616/TrueCoder/"
+                                        class="btn btn-danger mx-auto col-10 col-sm-5 my-2">View Code</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     {{>footer}}
+
     {{>lowerlinks}}
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

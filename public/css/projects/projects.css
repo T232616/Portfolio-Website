@@ -169,4 +169,74 @@ footer {
 }
 
 /* Footer Section ends */
+.main_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #141461;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_section .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: relative;
+  top: 7rem;
+  background-color: #00a5a5;
+}
+
+.main_section .card {
+  overflow: hidden;
+  width: 35rem;
+  height: 45rem;
+  background-color: #4461ff;
+  color: #fff;
+}
+
+.main_section .card img {
+  position: relative;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.main_section .card img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.main_section .card p {
+  font-size: 1.5rem;
+}
+
+.main_section .card .btn {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #0082ea;
+  border-color: #0082ea;
+}
+
+.main_section .card .btn:hover {
+  -webkit-box-shadow: 0 0 0.4rem 0.4rem #0082ea;
+          box-shadow: 0 0 0.4rem 0.4rem #0082ea;
+}
+
+.main_section .carousel-control-prev-icon {
+  color: #00a5a5 !important;
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 38.5%;
+  }
+}
 /*# sourceMappingURL=projects.css.map */

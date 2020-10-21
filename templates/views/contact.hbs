@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/contact/contact.css">
     {{>upperlinks}}
     <link rel="shortcut icon" href="images/myPhoto.jpg" type="image/jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 </head>
@@ -19,8 +21,9 @@
     <div class="main_section">
         <div class="login-box">
             <img src="images/myPhoto.jpg" class="avatar">
-            <h1 class="text-white"> Contact Me</h1>
-            <form method="POST" action="/contact">
+            <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="text-white"> Contact Me
+            </h1>
+            <form data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" method="POST" action="/contact">
 
                 <input class="text-white" type="text" name="username" placeholder="Enter Your Name" autocomplete="off"
                     required>
@@ -39,6 +42,9 @@
     </div>
     {{>footer}}
     {{>lowerlinks}}
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
