@@ -61,7 +61,21 @@ flex-direction: column;
 }
 // Responsive code for About Page
 
-    @media (max-width:320px)
+    @media (max-width:700px)
+    {
+      
+      html{
+        font-size:50.5%;
+      }
+    }
+    @media (max-width:460px)
+    {
+      
+      html{
+        font-size:40.5%;
+      }
+    }
+    @media (max-width:40px)
     {
       
       html{
