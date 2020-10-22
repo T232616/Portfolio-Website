@@ -20,21 +20,33 @@
     {{>header}}
     <div class="main_section">
         <div class="login-box">
-            <img src="images/myPhoto.jpg" class="avatar">
-            <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="text-white"> Contact Me
+            <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="text-white my-5"> Contact
+                Me
             </h1>
-            <form data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" method="POST" action="/contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <form class="my-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" method="POST"
+                        action="/contact">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <input class="text-white col-10 mx-auto my-4" type="text" name="username" placeholder="Enter Your Name"
+                                    autocomplete="off" required>
+                                <input class="text-white col-10 mx-auto my-4" type="email" name="email" placeholder="Enter Your Email"
+                                    autocomplete="off" required>
+                                <input class="text-white col-10 mx-auto my-4" type="tel" name="phone" placeholder="Enter Your Phone Number"
+                                    autocomplete="off" required>
+                                <input class="text-white col-10 mx-auto my-4" type="text" name="msg" placeholder="Enter Your Message..."
+                                <input class="text-white col-10 mx-auto my-4" type="text" name="msg" placeholder="Enter Your Message..."
+                                    autocomplete="off" required>
+                                <button class="col-10 mx-auto my-4" type="submit">Login</button>
+                            </div>
+                        </div>
 
-                <input class="text-white" type="text" name="username" placeholder="Enter Your Name" autocomplete="off"
-                    required>
-                <input class="text-white" type="email" name="email" placeholder="Enter Your Email" autocomplete="off"
-                    required>
-                <input class="text-white" type="tel" name="phone" placeholder="Enter Your Phone Number"
-                    autocomplete="off" required>
-                <input class="text-white" type="text" name="msg" placeholder="Enter Your Message..." autocomplete="off"
-                    required>
-                <button type="submit">Login</button>
-            </form>
+                    </form>
+                </div>
+
+            </div>
+
 
 
         </div>
