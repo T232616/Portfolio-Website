@@ -1,6 +1,14 @@
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
+var nodemailer = require("nodemailer");
+var transporter = nodemailer.createTransport({
+  service:"gmail",
+  auth:{
+    user:"tajhamnani_b18@ce.vjti.ac.in",
+    pass:"JAIGURUDEV"
+  }
+})
 const port = process.env.PORT || 3000;
 app = express();
 app.use(express.urlencoded({extended:true}));
@@ -27,6 +35,34 @@ app.get("/contact", (req, res) => {
   res.status(200).render("contact", { title: "Contact Page" });
 });
 app.post("/contact",(req,res)=>{
+  var mailOptions1 = {
+    from:"tajhamnani_b18@ce.vjti.ac.in",
+    to:`${req.body.email}`,
+    subject:"Thanks for Submitting Your Form",
+    text : `Hi ${req.body.username}  your response has been recieved .Thanks for filling the form 🙂`
+  }
+  var mailOptions2 = {
+    from:"tajhamnani_b18@ce.vjti.ac.in",
+    to:`tajhamnani_b18@ce.vjti.ac.in`,
+    subject:"SomeOne submitted Your Form",
+    text : `${req.body.username} filled your website form .Email is ${req.body.email} and number is ${req.body.phone} and message is ${req.body.msg}`
+  }
+  transporter.sendMail(mailOptions1,function(err,info){
+    if(err){
+      console.log(err);
+    }
+    else{
+      console.log("Email Sent "+info.response );
+    }
+  })
+  transporter.sendMail(mailOptions2,function(err,info){
+    if(err){
+      console.log(err);
+    }
+    else{
+      console.log("Email Sent "+info.response );
+    }
+  })
 console.log(req.body);
 res.status(200).render("submit", { title: "Thank You" ,name:req.body.username});
 })
