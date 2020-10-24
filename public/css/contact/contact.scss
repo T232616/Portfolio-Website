@@ -19,11 +19,10 @@
     width: 30rem;
     height: 40rem;
     border-radius: 1rem;
-    background-color: rgba(0,0,255,0.5);
-    
+    background-color: rgba(0, 0, 255, 0.5);
+
     & h1 {
       text-align: center;
-      
     }
     & form {
       display: flex;
@@ -31,33 +30,32 @@
       height: 100%;
       flex-direction: column;
       align-items: center;
-      
+
       & input {
         background-color: transparent !important;
         border-left: none;
         border-right: none;
         border-top: none;
         transition: 0.5s ease;
-        border-bottom:1px solid white;
+        border-bottom: 1px solid white;
         font-size: 1.5rem;
         outline: none;
         &:focus {
-          border-bottom: 1px solid    #2fccd0 !important;
-          
+          border-bottom: 1px solid #2fccd0 !important;
         }
       }
     }
     & button {
-      border:none !important;
+      border: none !important;
       outline: none !important;
-      color:white !important;
+      color: white !important;
       background-color: #1db9ff !important;
-      padding:1rem 2rem;
-      border-radius:2rem;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
       transition: 0.3s ease;
       font-size: 1.5rem;
       &:hover {
-        box-shadow:0 0 0.3rem 0.3rem #1db9ff;
+        box-shadow: 0 0 0.3rem 0.3rem #1db9ff;
       }
     }
   }
@@ -90,13 +88,23 @@ body {
   color: #fff;
   opacity: 0.5;
 }
-@media (max-width:700px){
-  html{
-    font-size:50%;
+@media (max-width: 320px) {
+  html {
+    font-size: 36.5% !important ;
   }
 }
-@media (max-width:320px){
-  html{
-    font-size:42%;
+@media (max-width: 455px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 42%;
   }
 }

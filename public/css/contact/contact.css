@@ -241,7 +241,7 @@ footer {
 }
 
 .main_section .login-box form input:focus {
-  border-bottom: 1px solid    #2fccd0 !important;
+  border-bottom: 1px solid #2fccd0 !important;
 }
 
 .main_section .login-box button {
@@ -301,6 +301,18 @@ body {
 ::placeholder {
   color: #fff;
   opacity: 0.5;
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 36.5% !important;
+  }
+}
+
+@media (max-width: 455px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 @media (max-width: 700px) {
