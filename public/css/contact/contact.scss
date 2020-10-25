@@ -88,23 +88,18 @@ body {
   color: #fff;
   opacity: 0.5;
 }
-@media (max-width: 320px) {
-  html {
-    font-size: 36.5% !important ;
+@media (max-width:320px){
+  html{
+      font-size:38.5%;
   }
 }
-@media (max-width: 455px) {
-  html {
-    font-size: 50%;
-  }
+@media (max-width:700px){
+html{
+  font-size:50%;
 }
-@media (max-width: 700px) {
-  html {
-    font-size: 50%;
-  }
 }
-@media (max-width: 320px) {
-  html {
-    font-size: 42%;
-  }
+@media (max-width:320px){
+html{
+  font-size:42%;
+}
 }

@@ -299,15 +299,21 @@ footer {
           animation: none;
 }
 
+@media (max-width: 320px) {
+  html {
+    font-size: 38.5%;
+  }
+}
+
 @media (max-width: 700px) {
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 504px) {
+@media (max-width: 320px) {
   html {
-    font-size: 30%;
+    font-size: 42%;
   }
 }
 /*# sourceMappingURL=home.css.map */

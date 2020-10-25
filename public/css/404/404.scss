@@ -16,27 +16,21 @@
        height: 100%;
    }
 }
-@media (max-width:1223px)
-{
+@media (max-width:320px){
   html{
-    font-size:40.5%;
+      font-size:38.5%;
   }
 }
-@media (max-width:500px)
-{
+@media (max-width:800px){
   html{
-    font-size:27.5%;
+      font-size:45.5%;
   }
 }
-@media (max-width:350px)
-{
+@media (max-width:700px){
   html{
-    font-size:27.5%;
+    font-size:40%;
   }
+h1{
+  font-size:1.5rem!important;
 }
-@media (max-width:342px)
-{
-  html{
-    font-size:20.5%;
-  }
 }

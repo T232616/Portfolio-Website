@@ -59,31 +59,21 @@
     }
   }
 }
-@media (max-width:1165px){
+@media (max-width:320px){
   html{
-    font-size:45.5%;
+      font-size:38.5%;
   }
 }
-@media (max-width:690px){
+@media (max-width:800px){
   html{
-    font-size:35.5%;
+      font-size:45.5%;
   }
 }
-@media (max-width:510px){
+@media (max-width:700px){
   html{
-    font-size:28.5%;
-
+    font-size:40%;
   }
+h1{
+  font-size:1.5rem!important;
 }
-@media (max-width:455px){
-  html{
-    font-size:20.5%;
-
-  }
-}
-@media (max-width:335px){
-  html{
-    font-size:15.5%;
-
-  }
 }

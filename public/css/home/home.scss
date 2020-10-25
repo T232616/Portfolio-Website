@@ -67,17 +67,22 @@
 // Responsive Code for Home
 
 
-@media (max-width:700px){
+@media (max-width:320px){
   html{
-    font-size:50%;
+      font-size:38.5%;
   }
+}
+@media (max-width:700px){
+html{
+  font-size:50%;
+}
+}
+@media (max-width:320px){
+html{
+  font-size:42%;
+}
 }
 
-@media (max-width:504px){
-  html{
-    font-size:30%;
-  }
-}
 // Res
 // Responsive Code for Home
 // Home ends
