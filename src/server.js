@@ -25,12 +25,12 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.status(200).render("about", { title: "About Page" });
 });
-app.get("/projects", (req, res) => {
+app.get("/projects", (req, res, next) => {
   res.status(200).render("projects", { title: "Projects" });
 });
-app.get("/skills", (req, res) => {
-  res.status(200).render("skills", { title: "Skills" });
-});
+app.get("/skills", (req, res, next) => {
+  res.status(200).render("skills", { title: "Skils" });
+})
 app.get("/contact", (req, res) => {
   res.status(200).render("contact", { title: "Contact Page" });
 });
@@ -38,13 +38,13 @@ app.post("/contact", (req, res) => {
   var mailOptions1 = {
     from: "tajhamnani_b18@ce.vjti.ac.in",
     to: `${req.body.email}`,
-    subject: "Thanks for Submitting Your Form",
+    subject: "Thanks for Submitting the Form",
     text: `Hi ${req.body.username}  your response has been recieved .Thanks for filling the form 🙂`,
   };
   var mailOptions2 = {
     from: "tajhamnani_b18@ce.vjti.ac.in",
     to: `tajhamnani_b18@ce.vjti.ac.in`,
-    subject: "SomeOne submitted Your Form",
+    subject: "Someone submitted Your Form",
     text: `${req.body.username} filled your website form .Email is ${req.body.email} and number is ${req.body.phone} and message is ${req.body.msg}`,
   };
   transporter.sendMail(mailOptions1, function (err, info) {
